@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kernel Einstellungen</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">Über</string>
+    <string name="changeTheme">Wechsle Stil (Dunkel/Hell)</string>
+    <string name="owner">Diese App wurde von David \"Firtecy\" Laprell entwickelt!</string>
+    <string name="warrenty">Performance Einstellungen beim booten wiederherstellen</string>
+    <string name="link">Danke an pengus77 und MinoochX dafür, dass sie mir geholfen und die Beta Versionen getestet haben!</string>
+	<string name="settings">Einstellungen</string>
+    
+    <!-- Kategorien -->
+    
+    <string name="Brightness">Helligkeit</string>
+    <string name="Volume">Lautstärke</string>
+    <string name="Charge">Aufladen</string>
+    <string name="Misc">Sonstiges</string>
+    <string name="Performance">Leistung</string>
+    
+    <!-- Modules -->
+
+    <string name="ASO">Awake (Bildschirm an) Management</string>
+    <string name="SLED">SoftKey LED Helligkeit</string>
+    <string name="AutoB">Automatische Display Helligkeit</string>
+    <string name="Speaker">Lautsprecher</string>
+    <string name="Headphone">Kopfhörer</string>
+    <string name="FCharge">Fast Charge (schnelles Aufladen)</string>
+    <string name="DFsync">Dynamic FSync</string>
+    <string name="SCM">Single Core Modus</string>
+    <string name="TCP">TCP Congestion Algorithmus</string>
+    <string name="ALCT">ALC Tabelle</string>
+    <string name="IntRA">Interne SD Karte - Read ahead (in kB)</string>
+    <string name="ExtRA">Externe SD Karte - Read ahead (in kB)</string>
+    
+    
+    <!-- Beschreibungen -->
+    
+    <string name="TX_DES">Vorsicht, nicht alle Router funktionieren oder funktionieren gut mit allen Werten!</string>
+    <string name="FCharge_DES">WARNUNG!: Diese Funktion nicht aktiv lassen, wenn das Gerät mit einem PC verbunden ist! Ansonsten könnten die USB-Ports beschädigt werden! Diese Funktion ist für das Laden mit Flugzeug-, Auto- oder ähnlichen Adaptern gedacht</string>
+	<string name="ALCTable_DES">The ALC Table is the scaling Table for Auto Brightness. On the left are the Values the Lightsensor returns(in LUX) the ones on the right are the ALS brightness values!</string>
+    
+</resources>

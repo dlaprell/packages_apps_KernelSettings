@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Features>
+	<Feature>
+	    <name>TCP</name>
+	    <longname>TCP Congestion Algorithm</longname>
+	    <type>combo</type>
+	    <from>sysctl net.ipv4.tcp_available_congestion_control</from>
+	    <path>sysctl -w net.ipv4.tcp_congestion_control=!VALUE!</path>
+	    <category>Misc</category>
+	</Feature>
+</Features>

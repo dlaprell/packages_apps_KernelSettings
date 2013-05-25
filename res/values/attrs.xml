@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="AppTheme">
+        <attr name="wifi" format="reference" />
+        <attr name="brightness" format="reference" />
+        <attr name="volume" format="reference" />
+        <attr name="charge" format="reference" />
+        <attr name="misc" format="reference" />
+        <attr name="performance" format="reference" />
+        <attr name="app" format="reference" />
+    </declare-styleable>
+</resources>

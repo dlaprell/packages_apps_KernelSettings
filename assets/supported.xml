@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Devices>
+	<Device>
+		<kernel>kowalski</kernel>
+		<name>p990</name>
+		<identifier>(kow@lski.kernel)</identifier>
+		<path>p990/kowalski</path>
+	</Device>
+	<Device>
+		<kernel>arc</kernel>
+		<name>p990</name>
+		<identifier>ARC.REACTOR@</identifier>
+		<path>p990/arc</path>
+	</Device>
+	<Device>
+		<kernel>arc</kernel>
+		<name>star</name>
+		<identifier>ARC.REACTOR@</identifier>
+		<path>p990/arc</path>
+	</Device>
+	<Device>
+		<kernel>naa</kernel>
+		<name>mango</name>
+		<identifier>nAa</identifier>
+		<path>mango/naa</path>
+	</Device>
+	<Device>
+	    <name>GT-I9000</name>
+	    <identifier>blinky-ghost@cyanogenmod</identifier>
+	    <kernel>cm_stock</kernel>
+	    <path>GT-I9000</path>
+	</Device>
+</Devices>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Features>
+	<Feature>
+		<name>PSP</name>
+		<longname>Power Save Polling</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/wifi_pm/max_pm</path>
+		<from>cat /sys/kernel/wifi_pm/max_pm</from>
+		<category>Wlan</category>
+	</Feature>
+	<Feature>
+		<name>HPM</name>
+		<longname>Hotspot Power Management</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/wifi_pm/hotspot_pm</path>
+		<from>cat /sys/kernel/wifi_pm/hotspot_pm</from>
+		<category>Wlan</category>
+	</Feature>
+	<Feature>
+		<name>ASO</name>
+		<longname>Awake (Screen on) Management</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/wifi_pm/wake_pm</path>
+		<from>cat /sys/kernel/wifi_pm/wake_pm</from>
+		<category>Wlan</category>
+	</Feature>
+	<Feature>
+		<name>TX</name>
+		<longname>Tx Power</longname>
+		<type>value</type>
+		<path>iwconfig wlan0 txpower !VALUE!</path>
+		<category>Wlan</category>
+		<from>iwconfig wlan0;Tx-Power:!VALUE! dBm</from>
+		<min>4</min>
+		<max>24</max>
+		<description>Be careful, not all the routers are happy with all the values.</description>
+	</Feature>
+	<Feature>
+		<name>SLED</name>
+		<longname>SoftKey LED Brightness</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness</path>
+		<from>cat /sys/devices/platform/star_led/leds/star_led/max_brightness</from>
+		<category>Brightness</category>
+		<min>0</min>
+		<max>255</max>
+	</Feature>
+	<Feature>
+		<name>AutoB</name>
+		<longname>Automatic Brightness</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/alc</path>
+		<from>cat /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/alc</from>
+		<category>Brightness</category>
+	</Feature>
+	<Feature>
+	    <name>ALCT</name>
+	    <longname>ALC Table</longname>
+	    <type>table</type>
+	    <path>echo 0 > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode;echo \"!VALUE!\" > /sys/class/backlight/aat2870-backlight/device/alc_table;echo 1 > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</path>
+	    <category>Brightness</category>
+	    <from>cat /sys/class/backlight/aat2870-backlight/device/alc_table</from>
+	    <min>5</min>
+	    <max>70</max>
+	    <remove> </remove>
+	</Feature>
+	<Feature>
+		<name>Speaker</name>
+		<longname>Speaker</longname>
+		<type>value</type>
+		<path>alsa_amixer sset "Speaker" "!VALUE!"</path>
+		<from>alsa_amixer sget "Speaker";Front Left: !VALUE! [</from>
+		<category>Volume</category>
+		<min>0</min>
+		<max>63</max>
+	</Feature>
+	<Feature>
+		<name>Headphone</name>
+		<longname>Headphone</longname>
+		<type>value</type>
+		<path>alsa_amixer sset "Headphone" "!VALUE!"</path>
+		<from>alsa_amixer sget "Headphone";Front Left: !VALUE! [</from>
+		<category>Volume</category>
+		<min>0</min>
+		<max>63</max>
+	</Feature>
+	<Feature>
+		<name>FCharge</name>
+		<longname>Fast Charge</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/fast_charge/force_fast_charge</path>
+		<category>Charge</category>
+		<from>cat /sys/kernel/fast_charge/force_fast_charge</from>
+		<description>WARNING!: Don\'t keep it active when connected to a PC or it may damage your usb ports. It\'s meant for fast charging when using car/plane adapters for example</description>
+	</Feature>
+	<Feature>
+		<name>DFsync</name>
+		<longname>Dynamic Fsync</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/dyn_fsync/Dyn_fsync_active</path>
+		<category>Misc</category>
+		<from>cat /sys/kernel/dyn_fsync/Dyn_fsync_active</from>
+	</Feature>
+	<Feature>
+		<name>SCM</name>
+		<longname>Singel Core Mode</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/auto_hotplug/single_core_mode</path>
+		<from>cat /sys/kernel/auto_hotplug/single_core_mode</from>
+		<category>Misc</category>
+	</Feature>
+	<Feature>
+		<name>IntRA</name>
+		<longname>Internal SD - Read ahead (in kB)</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/block/mmcblk0/queue/read_ahead_kb</path>
+		<from>cat /sys/block/mmcblk0/queue/read_ahead_kb</from>
+		<category>Misc</category>
+		<min>128</min>
+		<max>4096</max>
+		<steps>128</steps>
+	</Feature>
+	<Feature>
+		<name>ExtRA</name>
+		<longname>External SD - Read ahead (in kB)</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/block/mmcblk1/queue/read_ahead_kb</path>
+		<from>cat /sys/block/mmcblk1/queue/read_ahead_kb</from>
+		<category>Misc</category>
+		<min>128</min>
+		<max>4096</max>
+		<steps>128</steps>
+	</Feature>
+	<Feature>
+	    <name>TCP</name>
+	    <longname>TCP Congestion Algorithm</longname>
+	    <type>combo</type>
+	    <values>sysctl net.ipv4.tcp_available_congestion_control</values>
+	    <from>sysctl net.ipv4.tcp_congestion_control</from>
+	    <path>sysctl -w net.ipv4.tcp_congestion_control=!VALUE!</path>
+	    <category>Misc</category>
+	</Feature>
+</Features>

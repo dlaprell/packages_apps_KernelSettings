@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="Deprecated" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ViewConstructor" severity="ignore">
+        <ignore path="src/de/firtecy/AndroidGUI/SwipeMenu.java" />
+        <ignore path="src/de/firtecy/AndroidGUI/SwipeMenuLeft.java" />
+        <ignore path="src/de/firtecy/AndroidGUI/SwipeMenuRight.java" />
+    </issue>
+</lint>
