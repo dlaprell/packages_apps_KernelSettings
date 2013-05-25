@@ -7,5 +7,6 @@
         <attr name="misc" format="reference" />
         <attr name="performance" format="reference" />
         <attr name="app" format="reference" />
+        <attr name="camera" format="reference" />
     </declare-styleable>
 </resources>

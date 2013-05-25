@@ -26,11 +26,6 @@
             </intent-filter>
         </activity>
         
-        <activity
-            android:name="de.firtecy.extensions.ALCTable"
-            android:label="@string/app_name" >
-        </activity>
-        
         <receiver android:name="WifiRestore" android:permission="android.permission.ACCESS_WIFI_STATE">
             <intent-filter>
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />

@@ -19,9 +19,7 @@ public class TitleSeperator extends LinearLayout{
 		super(context);
 		this.setOrientation(LinearLayout.VERTICAL);
 		tv = new TextView(context);
-		//sp = new Seperator(context, Color.DKGRAY, 4);
 		tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-    	//tv.setTextColor(Color.CYAN);
     	tv.setPadding(30, 0, 30, 0);
     	this.setPadding(10, 10, 10, 10);
     	this.setClickable(true);

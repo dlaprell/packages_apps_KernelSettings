@@ -78,9 +78,6 @@ public class MenuBar extends LinearLayout implements OnClickListener {
 		tv.setText(t);
 	}
 
-	/* (non-Javadoc)
-	 * @see android.view.View.OnClickListener#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v) {
 		this.performClick();

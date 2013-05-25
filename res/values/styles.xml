@@ -7,6 +7,7 @@
          <item name="attr/misc">@drawable/misc_d</item>
          <item name="attr/performance">@drawable/performance_d</item>
          <item name="attr/app">@drawable/app_d</item>
+         <item name="attr/camera">@drawable/camera_d</item>
     </style>
     <style name="LightTheme" parent="android:Theme.Holo.Light">
          <item name="attr/wifi">@drawable/wifi_l</item>
@@ -16,6 +17,7 @@
          <item name="attr/misc">@drawable/misc_l</item>
          <item name="attr/performance">@drawable/performance_l</item>
          <item name="attr/app">@drawable/app_l</item>
+         <item name="attr/camera">@drawable/camera_l</item>
     </style>
  
     <style name="SplashScreen">

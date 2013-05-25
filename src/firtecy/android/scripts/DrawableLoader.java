@@ -40,6 +40,8 @@ public class DrawableLoader {
 			i = R.attr.app;
 		} else if(name.equals("Performance")) {
 			i = R.attr.performance;
+		} else if(name.equals("Camera")) {
+			i = R.attr.camera;
 		}
 		if(i != 0) {
 			TypedArray a = con.getTheme().obtainStyledAttributes(new int[] {i});     

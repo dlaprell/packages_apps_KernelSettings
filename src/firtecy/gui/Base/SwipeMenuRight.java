@@ -29,9 +29,8 @@ public class SwipeMenuRight extends RelativeLayout implements OnClickListener{
 		l = new LinearLayout(context);
 		back.setOnClickListener(this);
 		back.addImage(getResources().getDrawable(de.firtecy.kernelsettings.R.drawable.back));
-		back.setId(0xFF345);
+		back.setId(Values.generateViewId());
 		l.setOrientation(LinearLayout.VERTICAL);
-		//this.setBackgroundColor(Color.WHITE);
 		
 		prm1 = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		prm1.addRule(RelativeLayout.ALIGN_PARENT_TOP);
@@ -67,13 +66,6 @@ public class SwipeMenuRight extends RelativeLayout implements OnClickListener{
 		back.showIcon(b);
 	}
 	
-	public int getBarHeight() {
-		return back.getHeight();
-	}
-	
-	/* (non-Javadoc)
-	 * @see android.view.View.OnClickListener#onClick(android.view.View)
-	 */
 	@Override
 	public void onClick(View v) {
 		if(v == back) {

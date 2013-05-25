@@ -26,7 +26,7 @@ public class SwipeMenuLeft extends RelativeLayout implements OnClickListener{
 		controller = menu;
 		scroll = new BounceScrollView(context);
 		main = new MenuBar(context, "Settings");
-		main.setId(0xFe3453);
+		main.setId(Values.generateViewId());
 		items = new MenuTitle[m];
 		list = new LinearLayout(context);
 		list.setOrientation(LinearLayout.VERTICAL);

@@ -64,21 +64,18 @@ public class ValueSlider extends ListElement implements OnSeekBarChangeListener 
 		range = min / steps;
 		start = (int)range;
 		range = max / steps - start;
-		//edit.setRange(min, max);
 		sb.setMax((int)range);
 		
 	}
 	
 	public void setMax(int m) {
 		sb.setMax(m -  start);
-		//edit.setRange(edit.getMin(), m);
 		updateText();
 	}
 	
 	public void setMin(int m) {
 		sb.setMax(sb.getMax() - m);
 		sb.setProgress(sb.getProgress() + (start - m));
-		//edit.setRange(m, edit.getMax());
 		updateText();
 		start = m;
 	}

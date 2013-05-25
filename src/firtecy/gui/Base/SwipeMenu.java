@@ -187,7 +187,7 @@ public class SwipeMenu extends FrameLayout implements AnimationListener, OnClick
 			aPreview = new TranslateAnimation((int)posFinal, 0, 0, 0);
 			
 			overlay.setX(posFinal * -1.0f);
-			overlay.setY((float)right.getBarHeight());
+			overlay.setY(0);
 			
 			frame.setLayoutParams(new LayoutParams((int)(this.getWidth() * menuScale + this.getWidth()), LayoutParams.MATCH_PARENT));
 			frame.setWeightSum(1.0f * menuScale + 1.0f);

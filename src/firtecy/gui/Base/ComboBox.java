@@ -52,7 +52,6 @@ public class ComboBox extends ListElement implements OnItemSelectedListener, OnC
 		b = new ImageButton(context);
 		b.setOnClickListener(this);
 		b.setEnabled(true);
-		//b.setBackgroundColor(0x00000000);
 		b.setScaleType(ScaleType.FIT_CENTER);
 		b.setImageDrawable(getResources().getDrawable(R.drawable.tick));
 		b.setClickable(true);

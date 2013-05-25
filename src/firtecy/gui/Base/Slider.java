@@ -50,7 +50,6 @@ public class Slider extends ListElement implements OnSeekBarChangeListener {
 		range = min / steps;
 		start = (int)range;
 		range = max / steps - start;
-		//edit.setRange(min, max);
 		sb.setMax((int)range);
 		
 	}

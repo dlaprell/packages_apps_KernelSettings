@@ -22,7 +22,6 @@ public class TextViewer extends ListElement implements OnClickListener{
 		this.setClickable(true);
 		
 		tv = new TextView(context);
-		//tv.setTextColor(Color.BLACK);
 		tv.setLayoutParams(new TableLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 9));
 		tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, Values.TEXTSIZE);
 		

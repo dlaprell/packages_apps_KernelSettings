@@ -4,8 +4,8 @@ import android.content.Context;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 /**
@@ -17,25 +17,37 @@ public class Enabler extends ListElement implements OnClickListener{
 
 	private Switch sw;
 	private TextView tv;
-
+	private RelativeLayout container;
+	
 	public Enabler(Context context) {
 		super(context);
 		this.setOrientation(HORIZONTAL);
-		this.setVisibility(VISIBLE);
-		this.setWeightSum(10);
 		this.setClickable(true);
 		this.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 		
 		sw = new Switch(context);
 		tv = new TextView(context);
-		tv.setLayoutParams(new TableLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 9));
+		container = new RelativeLayout(context);
+		
+		container.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 		tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, Values.TEXTSIZE);
+		
+		RelativeLayout.LayoutParams prm1 = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+		RelativeLayout.LayoutParams prm2 = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+		
+		//set id so Rules with Id will work
+		sw.setId(Values.generateViewId());
+		tv.setId(Values.generateViewId());
+		
+		prm1.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+		prm2.addRule(RelativeLayout.LEFT_OF, sw.getId());
+		prm2.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 		
 		sw.setOnClickListener(this);
 		tv.setOnClickListener(this);
-		
-		this.addView(tv, 0);
-		this.addView(sw, 1);
+		container.addView(tv, prm2);
+		container.addView(sw, prm1);
+		this.addView(container);
 	}
 	
 	public void setText(String t) {

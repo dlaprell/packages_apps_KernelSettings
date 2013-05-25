@@ -31,7 +31,6 @@ public class MenuTitle extends LinearLayout implements OnClickListener{
 		s.setPadding(15, 3, 15, 3);
 		
 		this.setOrientation(LinearLayout.VERTICAL);
-		//this.setPadding(0, 5, 0, 15);
 		
 		l = new LinearLayout(context);
 		l.setOrientation(HORIZONTAL);

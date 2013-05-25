@@ -20,6 +20,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int camera=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int charge=0x7f010003;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -66,25 +70,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int back_icon=0x7f020004;
         public static final int brightness_d=0x7f020005;
         public static final int brightness_l=0x7f020006;
-        public static final int charge_d=0x7f020007;
-        public static final int charge_l=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int icon_launcher=0x7f02000a;
-        public static final int kowalski=0x7f02000b;
-        public static final int misc_d=0x7f02000c;
-        public static final int misc_l=0x7f02000d;
-        public static final int performance_d=0x7f02000e;
-        public static final int performance_l=0x7f02000f;
-        public static final int seek_thumb_normal=0x7f020010;
-        public static final int seekbar_background=0x7f020011;
-        public static final int seekbar_progress=0x7f020012;
-        public static final int seekbar_progress_bg=0x7f020013;
-        public static final int stripe_bg=0x7f020014;
-        public static final int tick=0x7f020015;
-        public static final int volume_d=0x7f020016;
-        public static final int volume_l=0x7f020017;
-        public static final int wifi_d=0x7f020018;
-        public static final int wifi_l=0x7f020019;
+        public static final int camera_d=0x7f020007;
+        public static final int camera_l=0x7f020008;
+        public static final int charge_d=0x7f020009;
+        public static final int charge_l=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int icon_launcher=0x7f02000c;
+        public static final int kowalski=0x7f02000d;
+        public static final int misc_d=0x7f02000e;
+        public static final int misc_l=0x7f02000f;
+        public static final int performance_d=0x7f020010;
+        public static final int performance_l=0x7f020011;
+        public static final int seek_thumb_normal=0x7f020012;
+        public static final int seekbar_background=0x7f020013;
+        public static final int seekbar_progress=0x7f020014;
+        public static final int seekbar_progress_bg=0x7f020015;
+        public static final int stripe_bg=0x7f020016;
+        public static final int tick=0x7f020017;
+        public static final int volume_d=0x7f020018;
+        public static final int volume_l=0x7f020019;
+        public static final int wifi_d=0x7f02001a;
+        public static final int wifi_l=0x7f02001b;
     }
     public static final class id {
         public static final int MAIN=0x7f0a0002;
@@ -166,6 +172,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppTheme_app de.firtecy.kernelsettings:app}</code></td><td></td></tr>
            <tr><td><code>{@link #AppTheme_brightness de.firtecy.kernelsettings:brightness}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppTheme_camera de.firtecy.kernelsettings:camera}</code></td><td></td></tr>
            <tr><td><code>{@link #AppTheme_charge de.firtecy.kernelsettings:charge}</code></td><td></td></tr>
            <tr><td><code>{@link #AppTheme_misc de.firtecy.kernelsettings:misc}</code></td><td></td></tr>
            <tr><td><code>{@link #AppTheme_performance de.firtecy.kernelsettings:performance}</code></td><td></td></tr>
@@ -174,6 +181,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            </table>
            @see #AppTheme_app
            @see #AppTheme_brightness
+           @see #AppTheme_camera
            @see #AppTheme_charge
            @see #AppTheme_misc
            @see #AppTheme_performance
@@ -182,7 +190,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int[] AppTheme = {
             0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004, 0x7f010005, 0x7f010006
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007
         };
         /**
           <p>This symbol is the offset where the {@link de.firtecy.kernelsettings.R.attr#app}
@@ -204,6 +212,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:brightness
         */
         public static final int AppTheme_brightness = 1;
+        /**
+          <p>This symbol is the offset where the {@link de.firtecy.kernelsettings.R.attr#camera}
+          attribute's value can be found in the {@link #AppTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:camera
+        */
+        public static final int AppTheme_camera = 7;
         /**
           <p>This symbol is the offset where the {@link de.firtecy.kernelsettings.R.attr#charge}
           attribute's value can be found in the {@link #AppTheme} array.
