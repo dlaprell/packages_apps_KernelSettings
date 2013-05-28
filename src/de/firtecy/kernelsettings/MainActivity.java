@@ -68,7 +68,7 @@ public class MainActivity extends Activity implements onReturnListener, OnFeatur
         
         getActionBar().hide(); //Hide the Action Bar, it is replaced by a custom one from SwipeMenu
         
-        //showSplashScreen();//Show the SplashScreen instead of a blank activity/layout
+        showSplashScreen();//Show the SplashScreen instead of a blank activity/layout
         
         access = RootTools.isAccessGiven();
         ready = false;
@@ -133,13 +133,8 @@ public class MainActivity extends Activity implements onReturnListener, OnFeatur
     	
     	Enabler e = null;
     	
-    	if(kernel.contains("(kow@lski.kernel)")) { //Add Performance Settings, relative to Kernel!
-    		GUI.addMenu(s(R.string.Performance), new PerformanceSettings(this, true, true), DrawableLoader.fromName("Performance", this));
-    		e = new Enabler(this);
-    	} else if(kernel.contains("ARC.REACTOR")) {
-    		GUI.addMenu(s(R.string.Performance), new PerformanceSettings(this),  DrawableLoader.fromName("Performance", this));
-    		e = new Enabler(this);
-    	}
+		GUI.addMenu(s(R.string.Performance), new PerformanceSettings(this),  DrawableLoader.fromName("Performance", this));
+		e = new Enabler(this);
     	
     	
     	TextViewer tv = new TextViewer(this);
@@ -169,7 +164,7 @@ public class MainActivity extends Activity implements onReturnListener, OnFeatur
         GUI.addMenu("App & " + getResources().getString(R.string.about), v,  DrawableLoader.fromName("App", this));
         
     	
-        //removeSplashScreen();
+        removeSplashScreen();
         
         Log.i(LOG_TAG, "Finished - Show GUI");
         this.setContentView(GUI.getSwipeMenu()); //get from the GUI Control the right View
@@ -361,10 +356,6 @@ public class MainActivity extends Activity implements onReturnListener, OnFeatur
         editor.commit();
         Utils.restartActivity(this);
 	}
-
-	@Override
-	public void startNewActivity(String path) {
-		
 	}
 
 	@Override
