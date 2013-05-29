@@ -39,7 +39,7 @@
 		<name>SLED</name>
 		<longname>SoftKey LED Brightness</longname>
 		<type>value</type>
-		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness</path>
+		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness;echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/brightness</path>
 		<from>cat /sys/devices/platform/star_led/leds/star_led/max_brightness</from>
 		<category>Brightness</category>
 		<min>0</min>

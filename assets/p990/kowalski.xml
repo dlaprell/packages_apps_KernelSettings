@@ -39,7 +39,7 @@
 		<name>SLED</name>
 		<longname>SoftKey LED Brightness</longname>
 		<type>value</type>
-		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness</path>
+		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness;echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/brightness</path>
 		<from>cat /sys/devices/platform/star_led/leds/star_led/max_brightness</from>
 		<category>Brightness</category>
 		<min>0</min>
@@ -49,8 +49,8 @@
 		<name>AutoB</name>
 		<longname>Automatic Brightness</longname>
 		<type>switch</type>
-		<path>echo !VALUE! > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/alc</path>
-		<from>cat /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/alc</from>
+		<path>echo !VALUE! > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</path>
+		<from>cat /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</from>
 		<category>Brightness</category>
 	</Feature>
 	<Feature>

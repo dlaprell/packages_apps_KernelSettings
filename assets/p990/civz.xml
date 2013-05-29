@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Features>
+	<Feature>
+		<name>SLED</name>
+		<longname>SoftKey LED Brightness</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/devices/platform/star_led/leds/star_led/max_brightness</path>
+		<from>cat /sys/devices/platform/star_led/leds/star_led/max_brightness</from>
+		<category>Brightness</category>
+		<min>0</min>
+		<max>255</max>
+	</Feature>
+	<Feature>
+		<name>AutoB</name>
+		<longname>Automatic Brightness</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</path>
+		<from>cat /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</from>
+		<category>Brightness</category>
+	</Feature>
+	<Feature>
+		<name>FCharge</name>
+		<longname>Fast Charge</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/fast_charge/force_fast_charge</path>
+		<category>Charge</category>
+		<from>cat /sys/kernel/fast_charge/force_fast_charge</from>
+		<description>WARNING!: Don\'t keep it active when connected to a PC or it may damage your usb ports. It\'s meant for fast charging when using car/plane adapters for example</description>
+	</Feature>
+	<Feature>
+		<name>DFsync</name>
+		<longname>Dynamic Fsync</longname>
+		<type>switch</type>
+		<path>echo !VALUE! > /sys/kernel/dyn_fsync/Dyn_fsync_active</path>
+		<category>Misc</category>
+		<from>cat /sys/kernel/dyn_fsync/Dyn_fsync_active</from>
+	</Feature>
+	<Feature>
+		<name>IntRA</name>
+		<longname>Internal SD - Read ahead (in kB)</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/block/mmcblk0/queue/read_ahead_kb</path>
+		<from>cat /sys/block/mmcblk0/queue/read_ahead_kb</from>
+		<category>Misc</category>
+		<min>128</min>
+		<max>4096</max>
+		<steps>128</steps>
+	</Feature>
+	<Feature>
+		<name>ExtRA</name>
+		<longname>External SD - Read ahead (in kB)</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/block/mmcblk1/queue/read_ahead_kb</path>
+		<from>cat /sys/block/mmcblk1/queue/read_ahead_kb</from>
+		<category>Misc</category>
+		<min>128</min>
+		<max>4096</max>
+		<steps>128</steps>
+	</Feature>
+	<Feature>
+	    <name>TCP</name>
+	    <longname>TCP Congestion Algorithm</longname>
+	    <type>combo</type>
+	    <values>sysctl net.ipv4.tcp_available_congestion_control</values>
+	    <from>sysctl net.ipv4.tcp_congestion_control</from>
+	    <path>sysctl -w net.ipv4.tcp_congestion_control=!VALUE!</path>
+	    <category>Misc</category>
+	</Feature>
+</Features>

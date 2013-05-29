@@ -7,6 +7,12 @@
 		<path>p990/kowalski</path>
 	</Device>
 	<Device>
+		<kernel>kowalski</kernel>
+		<name>star</name>
+		<identifier>(kow@lski.kernel)</identifier>
+		<path>p990/kowalski</path>
+	</Device>
+	<Device>
 		<kernel>arc</kernel>
 		<name>p990</name>
 		<identifier>ARC.REACTOR@</identifier>
@@ -17,6 +23,18 @@
 		<name>star</name>
 		<identifier>ARC.REACTOR@</identifier>
 		<path>p990/arc</path>
+	</Device>
+	<Device>
+		<kernel>civz</kernel>
+		<name>p990</name>
+		<identifier>civato@</identifier>
+		<path>p990/civz</path>
+	</Device>
+	<Device>
+		<kernel>civz</kernel>
+		<name>star</name>
+		<identifier>civato@</identifier>
+		<path>p990/civz</path>
 	</Device>
 	<Device>
 		<kernel>naa</kernel>
