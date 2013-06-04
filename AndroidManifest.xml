@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.firtecy.kernelsettings"
-    android:versionCode="12"
-    android:versionName="1.2" >
+    package="de.firtecy.kernelsetting"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
-	<uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="false"
-        android:configChanges="keyboardHidden|orientation|screenSize">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="de.firtecy.kernelsettings.MainActivity"
+            android:name="de.firtecy.kernelsetting.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,18 +27,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="de.firtecy.kernelsetting.SettingsActivity"
+            android:label="@string/action_settings" >
+        </activity>
         
-        <receiver android:name="WifiRestore" android:permission="android.permission.ACCESS_WIFI_STATE">
+        <receiver
+            android:name="de.firtecy.receiver.WifiRestore"
+            android:permission="android.permission.ACCESS_WIFI_STATE" >
             <intent-filter>
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </receiver>
         
-        <receiver android:name="BootRestore">
+        <receiver android:name="de.firtecy.receiver.BootRestore" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+        
     </application>
 
 </manifest>

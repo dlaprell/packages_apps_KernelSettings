@@ -4,8 +4,20 @@
 	    <name>TCP</name>
 	    <longname>TCP Congestion Algorithm</longname>
 	    <type>combo</type>
-	    <from>sysctl net.ipv4.tcp_available_congestion_control</from>
+	    <values>sysctl net.ipv4.tcp_available_congestion_control</values>
+	    <from>sysctl net.ipv4.tcp_congestion_control</from>
 	    <path>sysctl -w net.ipv4.tcp_congestion_control=!VALUE!</path>
 	    <category>Misc</category>
+	</Feature>
+	<Feature>
+		<name>IntRA</name>
+		<longname>Internal SD - Read ahead (in kB)</longname>
+		<type>value</type>
+		<path>echo !VALUE! > /sys/block/mmcblk0/queue/read_ahead_kb</path>
+		<from>cat /sys/block/mmcblk0/queue/read_ahead_kb</from>
+		<category>Misc</category>
+		<min>128</min>
+		<max>4096</max>
+		<steps>128</steps>
 	</Feature>
 </Features>

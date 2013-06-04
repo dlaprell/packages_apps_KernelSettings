@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="@string/app_settings" >
+        <ListPreference
+            android:key="Theme"
+            android:entries="@array/themes"
+            android:summary="@string/darklight"
+            android:entryValues="@array/themesValues"
+            android:title="@string/changeTheme" />
+        
+        <!--<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="LowMemory"
+            android:summary="@string/lMSummary"
+            android:title="@string/lowMemory" >
+        </CheckBoxPreference>-->
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/restore_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="RestoreBoot"
+            android:summary="@string/rSBoot"
+            android:title="@string/restore" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="RestorePerformance"
+            android:summary="@string/pRBoot"
+            android:title="@string/permormanceRestore" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="VertifyKernel"
+            android:summary="@string/vKBoot"
+            android:title="@string/vertifyKernel" >
+        </CheckBoxPreference>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

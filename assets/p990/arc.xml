@@ -102,14 +102,6 @@
 		<from>cat /sys/kernel/dyn_fsync/Dyn_fsync_active</from>
 	</Feature>
 	<Feature>
-		<name>SCM</name>
-		<longname>Singel Core Mode</longname>
-		<type>switch</type>
-		<path>echo !VALUE! > /sys/kernel/auto_hotplug/single_core_mode</path>
-		<from>cat /sys/kernel/auto_hotplug/single_core_mode</from>
-		<category>Misc</category>
-	</Feature>
-	<Feature>
 		<name>IntRA</name>
 		<longname>Internal SD - Read ahead (in kB)</longname>
 		<type>value</type>

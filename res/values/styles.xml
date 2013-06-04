@@ -1,25 +1,29 @@
 <resources>
+
     <style name="DarkTheme" parent="android:Theme.Holo">
-         <item name="attr/wifi">@drawable/wifi_d</item>
-         <item name="attr/brightness">@drawable/brightness_d</item>
-         <item name="attr/volume">@drawable/volume_d</item>
-         <item name="attr/charge">@drawable/charge_d</item>
-         <item name="attr/misc">@drawable/misc_d</item>
-         <item name="attr/performance">@drawable/performance_d</item>
-         <item name="attr/app">@drawable/app_d</item>
-         <item name="attr/camera">@drawable/camera_d</item>
+         
     </style>
     <style name="LightTheme" parent="android:Theme.Holo.Light">
-         <item name="attr/wifi">@drawable/wifi_l</item>
-         <item name="attr/brightness">@drawable/brightness_l</item>
-         <item name="attr/volume">@drawable/volume_l</item>
-         <item name="attr/charge">@drawable/charge_l</item>
-         <item name="attr/misc">@drawable/misc_l</item>
-         <item name="attr/performance">@drawable/performance_l</item>
-         <item name="attr/app">@drawable/app_l</item>
-         <item name="attr/camera">@drawable/camera_l</item>
+         
     </style>
- 
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
     <style name="SplashScreen">
         <item name="android:padding">0dp</item>
         <item name="android:windowBackground">@android:color/black</item>
