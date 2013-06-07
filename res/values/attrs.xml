@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:custom="http://schemas.android.com/apk/res/de.firtecy.kernelsettings">
+    <declare-styleable name="AppTheme">
+      <attr name="font" format="reference" />
+      <attr name="background" format="reference" />
+    </declare-styleable>
+</resources>

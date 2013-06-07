@@ -57,7 +57,7 @@
 	    <name>ALCT</name>
 	    <longname>ALC Table</longname>
 	    <type>table</type>
-	    <path>echo 0 > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode;echo \"!VALUE!\" > /sys/class/backlight/aat2870-backlight/device/alc_table;echo 1 > /sys/devices/platform/i2c-gpio.5/i2c-5/5-0060/backlight/aat2870-backlight/brightness_mode</path>
+	    <path>echo \"!VALUE!\" > /sys/class/backlight/aat2870-backlight/device/alc_table</path>
 	    <category>Brightness</category>
 	    <from>cat /sys/class/backlight/aat2870-backlight/device/alc_table</from>
 	    <min>3</min>

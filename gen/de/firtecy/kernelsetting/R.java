@@ -13,106 +13,169 @@ public final class R {
         public static final int themesValues=0x7f050001;
     }
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int background=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int font=0x7f010000;
+    }
+    public static final class color {
+        public static final int black=0x7f060001;
+        public static final int white=0x7f060000;
     }
     public static final class drawable {
-        public static final int actionbar=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int splash=0x7f020002;
-        public static final int tick=0x7f020003;
+        public static final int action_search=0x7f020000;
+        public static final int drawer_shadow=0x7f020001;
+        public static final int earth=0x7f020002;
+        public static final int ic_drawer=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int jupiter=0x7f020005;
+        public static final int mars=0x7f020006;
+        public static final int mercury=0x7f020007;
+        public static final int neptune=0x7f020008;
+        public static final int saturn=0x7f020009;
+        public static final int tick=0x7f02000a;
+        public static final int uranus=0x7f02000b;
+        public static final int venus=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090001;
-        public static final int imageView1=0x7f090000;
+        public static final int about=0x7f0a0007;
+        public static final int about_body=0x7f0a0004;
+        public static final int action_settings=0x7f0a0006;
+        public static final int app_name_and_version=0x7f0a0003;
+        public static final int container_fragment=0x7f0a0005;
+        public static final int content_frame=0x7f0a0001;
+        public static final int drawer_layout=0x7f0a0000;
+        public static final int left_drawer=0x7f0a0002;
     }
     public static final class layout {
-        public static final int settings_layout=0x7f030000;
-        public static final int splashscreen=0x7f030001;
+        public static final int activity_main=0x7f030000;
+        public static final int dialog_about=0x7f030001;
+        public static final int drawer_list_item=0x7f030002;
+        public static final int fragment_group=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int ALCT=0x7f060025;
-        public static final int ALCTable_DES=0x7f06002a;
-        public static final int ASO=0x7f06001b;
-        public static final int AutoB=0x7f06001e;
-        public static final int Brightness=0x7f060014;
-        public static final int Charge=0x7f060016;
-        public static final int DFsync=0x7f060022;
-        public static final int ExtRA=0x7f060027;
-        public static final int FCharge=0x7f060021;
-        public static final int FCharge_DES=0x7f060029;
-        public static final int HPM=0x7f06001a;
-        public static final int Headphone=0x7f060020;
-        public static final int IntRA=0x7f060026;
-        public static final int Misc=0x7f060017;
+        public static final int ALCT=0x7f07002a;
+        public static final int ALCTable_DES=0x7f07002f;
+        public static final int ASO=0x7f070020;
+        public static final int AutoB=0x7f070023;
+        public static final int Brightness=0x7f070019;
+        public static final int Charge=0x7f07001b;
+        public static final int DFsync=0x7f070027;
+        public static final int ExtRA=0x7f07002c;
+        public static final int FCharge=0x7f070026;
+        public static final int FCharge_DES=0x7f07002e;
+        public static final int HPM=0x7f07001f;
+        public static final int Headphone=0x7f070025;
+        public static final int IntRA=0x7f07002b;
+        public static final int Misc=0x7f07001c;
         /**  Modules 
  Modules 
          */
-        public static final int PSP=0x7f060019;
-        public static final int Performance=0x7f060018;
-        public static final int SCM=0x7f060023;
-        public static final int SLED=0x7f06001d;
-        public static final int Speaker=0x7f06001f;
-        public static final int TCP=0x7f060024;
-        public static final int TX=0x7f06001c;
+        public static final int PSP=0x7f07001e;
+        public static final int Performance=0x7f07001d;
+        public static final int SCM=0x7f070028;
+        public static final int SLED=0x7f070022;
+        public static final int Speaker=0x7f070024;
+        public static final int TCP=0x7f070029;
+        public static final int TX=0x7f070021;
         /**  Descriptions 
  Descriptions 
          */
-        public static final int TX_DES=0x7f060028;
-        public static final int Volume=0x7f060015;
+        public static final int TX_DES=0x7f07002d;
+        public static final int Volume=0x7f07001a;
         /**  Categorys 
  Categorys 
          */
-        public static final int Wlan=0x7f060013;
-        public static final int about=0x7f060002;
-        public static final int action_reply=0x7f06002e;
-        public static final int action_settings=0x7f060001;
-        public static final int action_share=0x7f06002d;
-        public static final int app_name=0x7f060000;
-        public static final int app_settings=0x7f06000a;
-        public static final int boot_message_notification_placeholder_text_template=0x7f06002c;
-        public static final int boot_message_notification_title_template=0x7f06002b;
-        public static final int changeTheme=0x7f06000f;
-        public static final int darklight=0x7f060010;
-        public static final int lMSummary=0x7f060012;
-        public static final int link=0x7f060004;
-        public static final int lowMemory=0x7f060011;
-        public static final int nosupport=0x7f060005;
-        public static final int owner=0x7f060003;
-        public static final int pRBoot=0x7f060009;
+        public static final int Wlan=0x7f070018;
+        public static final int about=0x7f070002;
+        public static final int about_body=0x7f07000b;
+        public static final int action_reply=0x7f070033;
+        public static final int action_settings=0x7f070001;
+        public static final int action_share=0x7f070032;
+        /**  Main 
+         */
+        public static final int app_name=0x7f070000;
+        public static final int app_name_and_version=0x7f07000c;
+        public static final int app_settings=0x7f07000f;
+        public static final int boot_message_notification_placeholder_text_template=0x7f070031;
+        public static final int boot_message_notification_title_template=0x7f070030;
+        public static final int changeTheme=0x7f070014;
+        /**  About 
+         */
+        public static final int close=0x7f07000a;
+        public static final int darklight=0x7f070015;
+        public static final int drawer_close=0x7f070009;
+        public static final int drawer_open=0x7f070008;
+        public static final int lMSummary=0x7f070017;
+        public static final int link=0x7f070004;
+        public static final int lowMemory=0x7f070016;
+        public static final int nosupport=0x7f070005;
+        public static final int owner=0x7f070003;
+        public static final int pRBoot=0x7f07000e;
         /**  Settings 
  Settings 
          */
-        public static final int permormanceRestore=0x7f060008;
-        public static final int rSBoot=0x7f06000c;
-        public static final int restore=0x7f060007;
-        public static final int restore_settings=0x7f06000b;
-        public static final int settings=0x7f060006;
-        public static final int vKBoot=0x7f06000e;
-        public static final int vertifyKernel=0x7f06000d;
+        public static final int permormanceRestore=0x7f07000d;
+        public static final int rSBoot=0x7f070011;
+        public static final int restore=0x7f070007;
+        public static final int restore_settings=0x7f070010;
+        public static final int settings=0x7f070006;
+        public static final int vKBoot=0x7f070013;
+        public static final int vertifyKernel=0x7f070012;
     }
     public static final class style {
-        /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-         */
-        public static final int AppBaseTheme=0x7f070002;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070003;
-        public static final int DarkTheme=0x7f070000;
-        public static final int LightTheme=0x7f070001;
-        public static final int SplashScreen=0x7f070004;
+        public static final int AppTheme=0x7f080002;
+        public static final int DarkTheme=0x7f080000;
+        public static final int LightTheme=0x7f080001;
+        public static final int SplashScreen=0x7f080003;
     }
     public static final class xml {
         public static final int settings=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a AppTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppTheme_background de.firtecy.kernelsetting:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppTheme_font de.firtecy.kernelsetting:font}</code></td><td></td></tr>
+           </table>
+           @see #AppTheme_background
+           @see #AppTheme_font
+         */
+        public static final int[] AppTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link de.firtecy.kernelsetting.R.attr#background}
+          attribute's value can be found in the {@link #AppTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:background
+        */
+        public static final int AppTheme_background = 1;
+        /**
+          <p>This symbol is the offset where the {@link de.firtecy.kernelsetting.R.attr#font}
+          attribute's value can be found in the {@link #AppTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:font
+        */
+        public static final int AppTheme_font = 0;
+    };
 }
